@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: devops-ci-cd-project
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    ports:
+      - 3000
